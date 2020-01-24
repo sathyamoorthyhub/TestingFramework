@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testrunner.Amazongoogletestrun">
+        <methods>
+          <include name="startTest"/>
+          <include name="signinbuttonclick"/>
+          <include name="movetothenextpagecreateaccount"/>
+          <include name="verifyfirstline"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- testrunner.Amazongoogletestrun -->
+      <class name="testrunner.Logincredentialtestrun">
+        <methods>
+          <include name="startTest"/>
+          <include name="enterthename" invocation-numbers="0"/>
+          <include name="endTest"/>
+          <include name="amazonregtitleverify"/>
+        </methods>
+      </class> <!-- testrunner.Logincredentialtestrun -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

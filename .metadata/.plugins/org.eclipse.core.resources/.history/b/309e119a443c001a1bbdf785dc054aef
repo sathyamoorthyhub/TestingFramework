@@ -1,0 +1,63 @@
+package testrunner;
+
+import static org.testng.Assert.assertEquals;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.LogStatus;
+
+import Datadriven.Datareading;
+import basepage.Basetesting;
+import pageobjects.Loginpages;
+
+public class Logintestrun extends Basetesting {
+
+Loginpages lp=new Loginpages();
+
+@DataProvider(name="fruitnames")
+public static Object[][] entermail() throws Exception
+{
+
+return Datareading.getExcelData("Fruitlist",1);
+
+}
+
+@Test(description="Title verify",groups= {"smoke","functional"})
+public void Testing() throws InterruptedException, IOException
+{
+browserinitialise();	
+
+Thread.sleep(2000);
+System.out.println("Title   " + driver.getTitle());
+assertEquals(driver.getTitle(),"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
+long id = Thread.currentThread().getId();
+System.out.println("Testing. Thread id is: " + id);
+
+ }	
+
+
+@Test(dataProvider="fruitnames",description="Navigate to next page",groups= {"smoke","functional"})
+public void naviagate(String text) throws InterruptedException
+{
+	lp.entertext(text);
+	
+	lp.pressenter();
+	Thread.sleep(1000);
+	driver.navigate().to("https://www.amazon.in/");
+	
+	Thread.sleep(3000);
+	assertEquals(driver.getTitle(),"Amazon.in: fruits");
+	 long id = Thread.currentThread().getId();
+     System.out.println("navigate. Thread id is: " + id);
+	
+		
+}
+	
+
+}
+
+ 

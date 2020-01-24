@@ -1,0 +1,478 @@
+package Basepage;
+
+import java.awt.AWTException;
+
+import java.awt.Dimension;
+import java.awt.Rectangle;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.lang.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import org.testng.reporters.*;
+
+import javax.imageio.ImageIO;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.TakesScreenshot;
+
+ import org.testng.Assert;
+import org.testng.IAnnotationTransformer;
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.ITestAnnotation;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+import org.openqa.selenium.support.events.WebDriverEventListener;
+
+
+public abstract class Basetesting implements ITestListener,IRetryAnalyzer,IAnnotationTransformer
+{
+	 public static WebDriver driver;
+	 private int counter = 0;
+	 private int retryMaxLimit = 1; private static int number; private static int number1;
+
+	public static WebDriver browserinitialise(String Browsertype, String url)
+	{
+	if(Browsertype.equalsIgnoreCase("firefox"))
+	{
+	 System.setProperty("webdriver.gecko.driver","C:\\Users\\sathyamoorthy.p\\Eclipse Helios\\SAIFramework\\Drivers\\geckodriver.exe");
+	 driver = new FirefoxDriver();
+		 
+	 driver.get(url);
+	}
+	else if(Browsertype.equalsIgnoreCase("chrome"))
+	{
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\sathyamoorthy.p\\Eclipse Helios\\SAIFramework\\Drivers\\geckodriver.exe");
+	 driver = new ChromeDriver();
+	}
+	else if(Browsertype.equalsIgnoreCase("ie"))
+	{
+	System.setProperty("webdriver.ie.driver","C:\\Users\\sathyamoorthy.p\\Eclipse Helios\\SAIFramework\\Drivers\\geckodriver.exe");
+	driver=new InternetExplorerDriver();
+	}
+	return driver;
+	}
+ @Test(description="This TS will perform Navigate to Url and type text")
+ public static void browserstart() throws InterruptedException, IOException 
+ {
+ Reporter.log("Browser Opened");
+ browserinitialise("firefox","https://www.google.com/");
+ Reporter.log("Browser Navigated to specified url" );
+ String title="amazon - Google Search";	  
+ String title1="Google";
+ Thread.sleep(1000);
+ WebElement searchbox=driver.findElement(By.xpath("/html/body/div/div[4]/form/div[2]/div[1]/div[1]/div/div[2]/input"));
+ searchbox.clear();
+ Assert.assertEquals(title1, driver.getTitle());
+ searchbox.sendKeys("amazon");
+ Thread.sleep(2000);
+ searchbox.sendKeys(Keys.ENTER);
+ Thread.sleep(1000);
+ System.out.println("Expected Title :" + driver.getTitle());
+ Assert.assertEquals(title, driver.getTitle());
+ Thread.sleep(1000);
+ }
+  public void onTestStart(ITestResult result)
+ {
+ System.out.println("Passed Test");
+ }
+ public void onTestSuccess(ITestResult result)
+ {
+	
+	 number= result.getStatus();
+	 System.out.println("status  :  "+result.getStatus());
+	 	 	 
+	 try {
+		
+		 fullsscreen();
+		 } 
+	 catch (Exception e) 
+	    {
+			
+			e.printStackTrace();
+		}
+}
+	 
+	public void onTestFailure(ITestResult result)
+	{
+	number1=result.getStatus();
+	System.out.println("status        :  "+result.getStatus());
+	System.out.println("Failed Test");
+		
+	 try {
+			fullsscreen();
+		}
+	 catch (Exception e)
+	    {
+			
+			e.printStackTrace();
+		}
+	}
+	 
+	public void onTestSkipped(ITestResult result) {
+		 try
+		    {
+				fullsscreen();
+			} 
+		 catch (Exception e) {
+				
+				e.printStackTrace();
+			}
+	 
+	}
+	 
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		 try 
+		 {
+				fullsscreen();
+		 } 
+		 catch (Exception e)
+		 {
+				
+				e.printStackTrace();
+		 }
+	 
+	}
+	
+
+	public static void fullsscreen()
+	{
+		
+		Screenshot screenshot=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(500)).takeScreenshot(driver);
+		System.out.println("scrollllllllllllllllllllll:");
+        try {
+        	System.out.println("scrolling:");
+        	if(number==1)
+        	{
+        	String path1=System.getProperty("user.dir")+"/PASSEDScreenCapturesPNG/"+System.currentTimeMillis()+".jpg";
+        	 ImageIO.write(screenshot.getImage(),"jpg",new File(path1));
+             Reporter.log("<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>");
+        	}
+        	else if(number1==2 )
+        	{
+        	String path2=System.getProperty("user.dir")+"/FAILEDScreenCapturesPNG/"+System.currentTimeMillis()+".jpg";
+            ImageIO.write(screenshot.getImage(),"jpg",new File(path2));
+            Reporter.log("<a href='"+ path2+ "'> <img src='"+ path2 + "' height='100' width='100'/> </a>");
+        	}
+       
+        } catch (IOException e) {
+        	System.out.println("scrolling   scrolling");
+        }
+        
+	}
+	public static void fullsscreen1()
+	{
+		
+		Screenshot screenshot=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(500)).takeScreenshot(driver);
+		System.out.println("fullsscreen1:");
+        try {
+        	System.out.println("Testing:");
+        	String path1=System.getProperty("user.dir")+"/TestingstepsScreenCapturesPNG/"+System.currentTimeMillis()+".jpg";
+        	 ImageIO.write(screenshot.getImage(),"jpg",new File(path1));
+             Reporter.log("<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>");
+        	}
+        	
+        catch (IOException e)
+        {
+       	System.out.println("scrolling   scrolling");
+        }
+        
+	}
+	public static void entirescreen()
+	{
+		
+		 try {
+	            Robot robot = new Robot();
+	            String format = "jpg";
+	            String fileName = "C:/selenium/" + format;
+	            Rectangle screenRect1 = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+	            BufferedImage screenFullImage = robot.createScreenCapture(screenRect1);
+	            ImageIO.write(screenFullImage, format, new File(fileName));
+	             
+	            System.out.println("A full screenshot saved!");
+	        } catch (AWTException | IOException ex) {
+	            System.err.println(ex);
+	        }
+	    }
+	
+	public static void partialscreen(int nu1,int nu2)
+	{
+		  try {
+	            Robot robot = new Robot();
+	            String format = "jpg";
+	            String fileName = "C:/selenium/" + format;
+	             
+	            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+	            Rectangle captureRect = new Rectangle(nu1, nu2, screenSize.width / 2, screenSize.height / 2);
+	            BufferedImage screenFullImage = robot.createScreenCapture(captureRect);
+	            ImageIO.write(screenFullImage, format, new File(fileName));
+	             
+	            System.out.println("A partial screenshot saved!");
+	        } catch (AWTException | IOException ex) {
+	            System.err.println(ex);
+	        }
+	    
+	}
+	
+ public static void screencapture() throws IOException
+ {
+	 
+		
+	 
+ File src= ((TakesScreenshot)driver). getScreenshotAs(OutputType. FILE); 
+	        
+  FileHandler.copy(src, new File("C:/selenium/"+System. currentTimeMillis()+".png"));  
+  File screenShotName = new File("C:/selenium/"+System. currentTimeMillis()+".png");
+  String s = String.class.getName();
+  
+  System.out.println("class name"+ s);
+  String filePath = screenShotName.toString();
+  String path = ("<br><img src='"+filePath+"' height='300' width='300'/><br>");
+  Reporter.log(path);
+	 
+ }
+
+
+
+public  boolean retry(ITestResult result) {
+if (counter < retryMaxLimit)
+{
+    counter++;
+    return true;
+     
+}
+	return false;
+}
+
+@Override
+public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod)
+{
+
+	annotation.setRetryAnalyzer(Basetesting.class);
+
+}
+
+
+public static String CaptureScreenShotWithTestStepName(WebDriver driver, String testStepsName)
+{
+	try{
+		// down casting WebDriver to use getScreenshotAs method.
+		TakesScreenshot ts= (TakesScreenshot)driver;
+		// capturing screen shot as output type file
+		File screenshotSRC= ts.getScreenshotAs(OutputType.FILE);
+		// Defining path and extension of image
+		String path=System.getProperty("user.dir")+"/ScreenCapturesPNG/"+testStepsName+System.currentTimeMillis()+".png";
+		// copying file from temp folder to desired location
+		File screenshotDest= new File(path);
+		FileUtils.copyFile(screenshotSRC, screenshotDest);
+		return path;
+	}catch(Exception e)
+	{
+		System.out.println("Some exception occured." + e.getMessage());
+		return "";
+	}
+}
+
+
+public static void screens(String testStepsName) throws InterruptedException
+{
+	// Down casting driver to JavascriptExecutor
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	// It returns height of view part. You can say it as page height. When you click on page down key
+	// Page scroll by one page. 
+	long pageHeight= (long)js.executeScript("return window.innerHeight");
+	System.out.println("Page height: "+pageHeight);
+	
+	// It is how much you can scroll. It is height if you scroll, you will reach to bottom of page.
+	long scrollableHeight= (long)js.executeScript("return document.body.scrollHeight");
+	System.out.println("Total scrollable height: "+scrollableHeight);
+	
+	// Finding number of pages. Adding 1 extra to consider decimal part.
+	int numberOfPages=(int) (scrollableHeight/pageHeight)+1;
+	
+	System.out.println("Total pages: "+numberOfPages);
+	
+
+	// Now scrolling page by page
+	for(int i=0;i<numberOfPages;i++)
+	{
+		CaptureScreenShotWithTestStepName(driver, testStepsName+(i+1));
+		js.executeScript("window.scrollBy(0,"+pageHeight+")");
+		Thread.sleep(2000);
+	}
+}
+
+
+/*@Override
+public void afterAlertAccept(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void afterAlertDismiss(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void afterChangeValueOf(WebElement arg0, WebDriver arg1, CharSequence[] arg2) {
+	fullsscreen();
+	
+}
+@Override
+public void afterClickOn(WebElement arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void afterFindBy(By arg0, WebElement arg1, WebDriver arg2) {
+	fullsscreen();
+	
+}
+@Override
+public <X> void afterGetScreenshotAs(OutputType<X> arg0, X arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void afterGetText(WebElement arg0, WebDriver arg1, String arg2) {
+	fullsscreen();
+	
+}
+@Override
+public void afterNavigateBack(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void afterNavigateForward(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void afterNavigateRefresh(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void afterNavigateTo(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void afterScript(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void afterSwitchToWindow(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeAlertAccept(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeAlertDismiss(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeChangeValueOf(WebElement arg0, WebDriver arg1, CharSequence[] arg2) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeClickOn(WebElement arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeFindBy(By arg0, WebElement arg1, WebDriver arg2) {
+	fullsscreen();
+	
+}
+@Override
+public <X> void beforeGetScreenshotAs(OutputType<X> arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeGetText(WebElement arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeNavigateBack(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeNavigateForward(WebDriver arg0) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeNavigateRefresh(WebDriver arg0) {
+	// TODO Auto-generated method stub
+	
+}
+@Override
+public void beforeNavigateTo(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeScript(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void beforeSwitchToWindow(String arg0, WebDriver arg1) {
+	fullsscreen();
+	
+}
+@Override
+public void onException(Throwable arg0, WebDriver arg1) {
+	// TODO Auto-generated method stub
+	
+}*/
+
+
+
+
+
+}
