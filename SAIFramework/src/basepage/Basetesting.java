@@ -131,7 +131,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
  public void onTestFailure(ITestResult result) {  
  number1=result.getStatus(); String resultname = result.getName();
  fullsscreen();
- System.out.println("Failure of test cases and its details are  ");  
+ System.out.println("Failure of test cases and its details  ");  
  }  
    
  @Override  
