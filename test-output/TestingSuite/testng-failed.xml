@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [TestingSuite]" parallel="classes">
+  <listeners>
+    <listener class-name="basepage.Basetesting"/>
+  </listeners>
+  <test name="Amazongoogletest(failed)" parallel="classes">
+    <groups>
+      <run>
+        <include name="Functional testing"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testrunner.Amazongoogletestrun">
+        <methods>
+          <include name="signinbuttonclick"/>
+        </methods>
+      </class> <!-- testrunner.Amazongoogletestrun -->
+    </classes>
+  </test> <!-- Amazongoogletest(failed) -->
+</suite> <!-- Failed suite [TestingSuite] -->

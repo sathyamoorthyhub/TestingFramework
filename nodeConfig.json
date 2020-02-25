@@ -1,0 +1,41 @@
+{
+
+  "capabilities": [
+
+    {
+
+      "browserName": "firefox",
+
+      "maxInstances": 1,
+
+      "platform": "WINDOWS",
+
+      "webdriver.gecko.driver": "C:/gecko/geckodriver.exe"
+
+    }
+
+  ],
+
+  "configuration": {
+
+    "_comment" : "Configuration for Node",
+
+    "cleanUpCycle": 2000,
+
+    "timeout": 30000,
+
+    "proxy": "org.openqa.grid.selenium.proxy.WebDriverRemoteProxy",
+
+    "port": 5432,
+
+    "host": "172.25.11.66",
+
+    "register": true,
+
+    "hubPort": 4444,
+
+    "maxSession": 5
+
+  }
+
+}
