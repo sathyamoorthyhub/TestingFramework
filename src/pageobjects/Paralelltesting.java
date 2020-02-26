@@ -31,7 +31,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import basepage.Basetesting;
-import basepage.GoogleChrome;
 import basepage.GoogleFirefox;
 import okhttp3.internal.http2.Settings;
 import java.net.MalformedURLException;
@@ -49,13 +48,13 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 public class Paralelltesting extends Basetesting {
 	
 	
-	GoogleChrome gc=new GoogleChrome();
+	
 	GoogleFirefox gf=new GoogleFirefox();
 
 public  void testGooglePageTitleInFirefox() throws Exception
 {
 
-	gc.run();
+	
 	gf.run();
 	
 }
