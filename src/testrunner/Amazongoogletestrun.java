@@ -22,7 +22,7 @@ public class Amazongoogletestrun extends Basetesting{
 	}*/
 	
 	@Test(priority=1,description="verify the textingline present",groups= {"Smoke testing","Functional testing","Regression testing"})
-	public void verifyfirstline() throws InterruptedException
+	public void verifyfirstlineee() throws InterruptedException
 	{
 	assertEquals(ap.verify_first_texting(),verifytext_line );
 	Thread.sleep(500);

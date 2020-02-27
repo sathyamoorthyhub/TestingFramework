@@ -96,7 +96,7 @@
  <property name="suite.web.CopyRegressionCustomer" value="CopyRegressionCustomer" />
  <testng classpath="${test.classpath}:${test.dest}" suitename="TestingSuite" outputDir="test-output" useDefaultListeners="true"  >
  
- <xmlfileset dir="." includes="testng.xml" />
+ <xmlfileset dir="." includes="testng11.xml" />
  </testng>
   
  </target>
