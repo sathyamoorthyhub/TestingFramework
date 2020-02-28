@@ -340,8 +340,14 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	    Iterator<Integer> iteratorr=it1.iterator();
 	
 
+<<<<<<< HEAD
 		
 		System.out.println("LinkedHashMap LinkedHashMap Testiiiiiiiiiiiiiiiiiiiiiiing   ");
+=======
+
+		System.out.println("LinkedHashMap Testing Testiiiiiiiiiiiiiiiiiiiing ");
+
+>>>>>>> parent of 76730d2... rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 
 
 
