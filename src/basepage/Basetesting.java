@@ -343,12 +343,16 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 
 		
+<<<<<<< HEAD
 
 
 
 		
 		System.out.println("LinkedHashMapppppp  ");
 
+=======
+		System.out.println("LinkedHashMap  ");
+>>>>>>> parent of bc9acca... testscommitttttttttttttttttttttttttttttttt
 
 
 		while(iteratorr.hasNext())
