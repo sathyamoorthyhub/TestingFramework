@@ -341,6 +341,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 		
 
+<<<<<<< HEAD
+		System.out.println("LinkedHashMap rr ");
+=======
+		System.out.println("LinkedHashMap ee ");
+>>>>>>> parent of 95a1b42... ff
 
 		
 
