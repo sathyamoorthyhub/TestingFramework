@@ -344,7 +344,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
  
 
-		System.out.println("LinkedHashMap one ");
+		System.out.println("LinkedHashMap 1 ");
 
 
 		
