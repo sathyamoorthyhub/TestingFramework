@@ -349,8 +349,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 		
 
+<<<<<<< HEAD
 		
 
+=======
+>>>>>>> parent of fafb9b2... after after
 
 
 
