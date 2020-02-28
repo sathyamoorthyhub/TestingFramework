@@ -342,18 +342,18 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		
 
 
-		System.out.println("LinkedHashMap  zz); 
  
 
-		System.out.println("LinkedHashMap ff ");
+		System.out.println("LinkedHashMap 3 ");
 
 
 		
+
 <<<<<<< HEAD
+		
 
 =======
-		System.out.println("LinkedHashMap f  ");
->>>>>>> parent of 695fa6b... h
+>>>>>>> parent of fafb9b2... after after
 
 
 
