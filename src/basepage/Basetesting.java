@@ -337,12 +337,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		
 		Set<Integer> it1=lh.keySet();
 	
-	    Iterator<Integer> iteratorr=it1.iterator();	
-
+	    Iterator<Integer> iteratorr=it1.iterator();
 
 		
 
-		System.out.println("LinkedHashMap cc  ");
+		System.out.println("LinkedHashMap ee ");
 
 		
 
