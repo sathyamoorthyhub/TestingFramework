@@ -342,7 +342,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 	    System.out.println("LinkedHash testing ");
 		
-	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
+	
 
 
 
