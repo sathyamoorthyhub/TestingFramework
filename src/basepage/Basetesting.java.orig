@@ -339,13 +339,25 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<Integer> iteratorr=it1.iterator();
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 
-		System.out.println("LinkedHashMap  z"); 
- 
+
+
+		System.out.println("LinkedHash iii ");
+
+
+
+=======
 		
-		System.out.println("LinkedHashMappppppppppppppppppppppppppppppppppp ");
+		System.out.println("LinkedHash hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ");
+>>>>>>> newtesting
 
-
+=======
+	    System.out.println("LinkedHash testing ");
+		
+	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
+>>>>>>> newtesting
 
 
 
