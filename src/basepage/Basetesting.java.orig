@@ -295,14 +295,20 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
             // add days to current date using Calendar.add method
 	         now.add(Calendar.MONTH, num+1);
               int fm=now.get(Calendar.MONTH);
-              System.out.println("future month for current date   "+fm);
+              System.out.println("future month for current date   "+fm); System.out.println("future month for current dateeee   "+fm);
               
              now.add(Calendar.DATE, 15);
               int fdates=now.get(Calendar.DATE);
-              System.out.println("future datessssssssssssssssssssss   "+fdates);
+              System.out.println("future datessssssssssssssssssssss   "+fdates);   System.out.println("future dates   "+fdates);
+              
+              System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhh");
               
               monthdifference=fm-thismonth;
+<<<<<<< Updated upstream
               
+=======
+              System.out.println("testiiiiiiiiiiiiiiiiiiiiiiiiiiiiing");
+>>>>>>> Stashed changes
               System.out.println("month difference: " + monthdifference);
               String fmstring=Integer.toString(fm);
 	    System.out.println("dated after six month : " + (now.get(Calendar.MONTH) ) + "-"
@@ -339,21 +345,19 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<Integer> iteratorr=it1.iterator();
 
-		
-
-
-		System.out.println("LinkedHashMap  zz"); 
- 
-
-<<<<<<< HEAD
-		System.out.println("LinkedHashMap ff ");
-=======
-		System.out.println("LinkedHashMap 6 ");
-				
->>>>>>> 5e9066e7bc69ce06c5846598e6c079b4aec68966
-
 
 		
+		System.out.println("LinkedHash hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ");
+
+
+	    System.out.println("LinkedHash testing ");
+		
+	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
+
+
+	    System.out.println("LinkedHash testing ");
+		
+	
 
 
 

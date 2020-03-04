@@ -240,7 +240,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
         //Integer to String Conversion
         String todayStr = Integer.toString(todayInt);
         System.out.println("Today Str: " + todayStr + "\n");
- 
+        
         return todayStr;
 	}
 	
@@ -304,7 +304,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
               System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhh");
               
               monthdifference=fm-thismonth;
-              
+              System.out.println("testiiiiiiiiiiiiiiiiiiiiiiiiiiiiing");
               System.out.println("month difference: " + monthdifference);
               String fmstring=Integer.toString(fm);
 	    System.out.println("dated after six month : " + (now.get(Calendar.MONTH) ) + "-"
@@ -904,6 +904,11 @@ public static void safeJavaScriptClick(WebElement element) throws Exception {
 @Override
 public void run() {
 	
+	
+}
+
+public void method()
+{
 	
 }
 }
