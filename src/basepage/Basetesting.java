@@ -295,7 +295,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
             // add days to current date using Calendar.add method
 	         now.add(Calendar.MONTH, num+1);
               int fm=now.get(Calendar.MONTH);
-              System.out.println("future month for current date   "+fm);
+              System.out.println("future month for current date   "+fm); System.out.println("future month for current dateeee   "+fm);
               
              now.add(Calendar.DATE, 15);
               int fdates=now.get(Calendar.DATE);
@@ -341,9 +341,20 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<Integer> iteratorr=it1.iterator();
 
+
+		
+		System.out.println("LinkedHash hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ");
+
+
+	    System.out.println("LinkedHash testing ");
+		
+	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
+
+
 	    System.out.println("LinkedHash testing ");
 		
 	
+
 
 
 
@@ -889,7 +900,10 @@ public static void safeJavaScriptClick(WebElement element) throws Exception {
 	}
 }
 
-
+public void method()
+{
+	
+}
 @Override
 public void run() {
 	
