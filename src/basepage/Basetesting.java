@@ -900,10 +900,7 @@ public static void safeJavaScriptClick(WebElement element) throws Exception {
 	}
 }
 
-public void method()
-{
-	
-}
+
 @Override
 public void run() {
 	
