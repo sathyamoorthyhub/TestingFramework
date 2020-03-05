@@ -1,90 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results skipped="0" failed="1" total="4" passed="3">
-  <reporter-output>
-    <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796902860.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796902860.png' height='100' width='100'/> </a></td>]]>
-    </line>
-    <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796920771.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796920771.png' height='100' width='100'/> </a></td>]]>
-    </line>
-    <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796930238.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796930238.png' height='100' width='100'/> </a></td>]]>
-    </line>
-    <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796944821.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796944821.png' height='100' width='100'/> </a></td>]]>
-    </line>
-  </reporter-output>
-  <suite name="TestingSuite" duration-ms="78303" started-at="2020-02-27T09:47:54Z" finished-at="2020-02-27T09:49:12Z">
-    <groups>
-      <group name="Functional testing">
-        <method signature="Logintestrun.Testing()[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="Testing" class="testrunner.Logintestrun"/>
-        <method signature="Logintestrun.naviagate(java.lang.String)[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="naviagate" class="testrunner.Logintestrun"/>
-        <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.signinbuttonclick()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.dateselection()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="dateselection" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="enterthename" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.getthetitle()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="getthetitle" class="testrunner.Logincredentialtestrun"/>
-      </group> <!-- Functional testing -->
-      <group name="Smoke testing">
-        <method signature="Logintestrun.Testing()[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="Testing" class="testrunner.Logintestrun"/>
-        <method signature="Logintestrun.naviagate(java.lang.String)[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="naviagate" class="testrunner.Logintestrun"/>
-        <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.signinbuttonclick()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.dateselection()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="dateselection" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="enterthename" class="testrunner.Logincredentialtestrun"/>
-        <method signature="Logincredentialtestrun.getthetitle()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="getthetitle" class="testrunner.Logincredentialtestrun"/>
-      </group> <!-- Smoke testing -->
-      <group name="Regression testing">
-        <method signature="Logintestrun.Testing()[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="Testing" class="testrunner.Logintestrun"/>
-        <method signature="Logintestrun.naviagate(java.lang.String)[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="naviagate" class="testrunner.Logintestrun"/>
-        <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.signinbuttonclick()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@48a242ce]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
-=======
 <testng-results skipped="0" failed="1" ignored="0" retried="1" total="10" passed="8">
   <reporter-output>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720192092.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720192092.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401657113.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401657113.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720225150.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720225150.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401674222.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401674222.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720235283.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720235283.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401683350.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401683350.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720259186.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720259186.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401706948.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401706948.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720261389.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720261389.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401709278.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401709278.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720263003.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720263003.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401710969.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401710969.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720264832.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720264832.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401712759.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401712759.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720280628.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720280628.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401728758.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401728758.png' height='100' width='100'/> </a></td>]]>
     </line>
     <line>
-      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720281616.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720281616.png' height='100' width='100'/> </a></td>]]>
+      <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401729725.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401729725.png' height='100' width='100'/> </a></td>]]>
     </line>
   </reporter-output>
-  <suite name="TestingSuite" duration-ms="122490" started-at="2020-02-26T17:59:19 IST" finished-at="2020-02-26T18:01:21 IST">
+  <suite name="TestingSuite" duration-ms="104142" started-at="2020-03-05T15:17:05 IST" finished-at="2020-03-05T15:18:49 IST">
     <groups>
       <group name="Functional testing">
         <method signature="Logintestrun.Testing()[pri:1, instance:testrunner.Logintestrun@7d0587f1]" name="Testing" class="testrunner.Logintestrun"/>
         <method signature="Logintestrun.naviagate(java.lang.String)[pri:2, instance:testrunner.Logintestrun@7d0587f1]" name="naviagate" class="testrunner.Logintestrun"/>
         <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:3, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
         <method signature="Amazongoogletestrun.signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstline()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstline" class="testrunner.Amazongoogletestrun"/>
+        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
         <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
         <method signature="Logincredentialtestrun.dateselection()[pri:2, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="dateselection" class="testrunner.Logincredentialtestrun"/>
         <method signature="Logincredentialtestrun.enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="enterthename" class="testrunner.Logincredentialtestrun"/>
@@ -95,45 +47,31 @@
         <method signature="Logintestrun.naviagate(java.lang.String)[pri:2, instance:testrunner.Logintestrun@7d0587f1]" name="naviagate" class="testrunner.Logintestrun"/>
         <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:3, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
         <method signature="Amazongoogletestrun.signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstline()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstline" class="testrunner.Amazongoogletestrun"/>
+        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
         <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
->>>>>>> newtesting
       </group> <!-- Regression testing -->
       <group name="Smoke testing">
         <method signature="Logintestrun.Testing()[pri:1, instance:testrunner.Logintestrun@7d0587f1]" name="Testing" class="testrunner.Logintestrun"/>
         <method signature="Logintestrun.naviagate(java.lang.String)[pri:2, instance:testrunner.Logintestrun@7d0587f1]" name="naviagate" class="testrunner.Logintestrun"/>
         <method signature="Amazongoogletestrun.movetothenextpagecreateaccount()[pri:3, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="movetothenextpagecreateaccount" class="testrunner.Amazongoogletestrun"/>
         <method signature="Amazongoogletestrun.signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" class="testrunner.Amazongoogletestrun"/>
-        <method signature="Amazongoogletestrun.verifyfirstline()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstline" class="testrunner.Amazongoogletestrun"/>
+        <method signature="Amazongoogletestrun.verifyfirstlineee()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstlineee" class="testrunner.Amazongoogletestrun"/>
         <method signature="Logincredentialtestrun.amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="amazonregtitleverify" class="testrunner.Logincredentialtestrun"/>
         <method signature="Logincredentialtestrun.dateselection()[pri:2, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="dateselection" class="testrunner.Logincredentialtestrun"/>
         <method signature="Logincredentialtestrun.enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="enterthename" class="testrunner.Logincredentialtestrun"/>
         <method signature="Logincredentialtestrun.getthetitle()[pri:3, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="getthetitle" class="testrunner.Logincredentialtestrun"/>
       </group> <!-- Smoke testing -->
     </groups>
-<<<<<<< HEAD
-    <test name="Logintest" duration-ms="47542" started-at="2020-02-27T09:47:54Z" finished-at="2020-02-27T09:48:42Z">
+    <test name="Logintest" duration-ms="49742" started-at="2020-03-05T15:17:05 IST" finished-at="2020-03-05T15:17:55 IST">
       <class name="testrunner.Logintestrun">
-        <test-method status="PASS" signature="Testing()[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="Testing" duration-ms="16140" started-at="2020-02-27T15:17:54Z" description="Title verify" finished-at="2020-02-27T15:18:10Z">
+        <test-method status="PASS" signature="Testing()[pri:1, instance:testrunner.Logintestrun@7d0587f1]" name="Testing" duration-ms="18064" started-at="2020-03-05T15:17:05 IST" description="Title verify" finished-at="2020-03-05T15:17:23 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796902860.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796902860.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401657113.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401657113.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- Testing -->
-        <test-method status="PASS" signature="naviagate(java.lang.String)[pri:0, instance:testrunner.Logintestrun@1f021e6c]" name="naviagate" duration-ms="6125" started-at="2020-02-27T15:18:26Z" description="Navigate to next page" data-provider="Fruitnames" finished-at="2020-02-27T15:18:32Z">
-=======
-    <test name="Logintest" duration-ms="67327" started-at="2020-02-26T17:59:19 IST" finished-at="2020-02-26T18:00:26 IST">
-      <class name="testrunner.Logintestrun">
-        <test-method status="PASS" signature="Testing()[pri:1, instance:testrunner.Logintestrun@7d0587f1]" name="Testing" duration-ms="17563" started-at="2020-02-26T17:59:19 IST" description="Title verify" finished-at="2020-02-26T17:59:36 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720192092.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720192092.png' height='100' width='100'/> </a></td>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Testing -->
-        <test-method status="PASS" signature="naviagate(java.lang.String)[pri:2, instance:testrunner.Logintestrun@7d0587f1]" name="naviagate" duration-ms="14546" started-at="2020-02-26T18:00:02 IST" description="Navigate to next page" data-provider="Fruitnames" finished-at="2020-02-26T18:00:16 IST">
->>>>>>> newtesting
+        <test-method status="PASS" signature="naviagate(java.lang.String)[pri:2, instance:testrunner.Logintestrun@7d0587f1]" name="naviagate" duration-ms="6198" started-at="2020-03-05T15:17:41 IST" description="Navigate to next page" data-provider="Fruitnames" finished-at="2020-03-05T15:17:47 IST">
           <params>
             <param index="0">
               <value>
@@ -143,39 +81,22 @@
           </params>
           <reporter-output>
             <line>
-<<<<<<< HEAD
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796920771.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796920771.png' height='100' width='100'/> </a></td>]]>
-=======
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720225150.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720225150.png' height='100' width='100'/> </a></td>]]>
->>>>>>> newtesting
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401674222.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401674222.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- naviagate -->
       </class> <!-- testrunner.Logintestrun -->
     </test> <!-- Logintest -->
-<<<<<<< HEAD
-    <test name="Amazongoogletest" duration-ms="30581" started-at="2020-02-27T09:48:42Z" finished-at="2020-02-27T09:49:12Z">
+    <test name="Amazongoogletest" duration-ms="33934" started-at="2020-03-05T15:17:55 IST" finished-at="2020-03-05T15:18:29 IST">
       <class name="testrunner.Amazongoogletestrun">
-        <test-method status="PASS" signature="verifyfirstlineee()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="verifyfirstlineee" duration-ms="556" started-at="2020-02-27T15:18:42Z" description="verify the textingline present" finished-at="2020-02-27T15:18:42Z">
+        <test-method status="PASS" signature="verifyfirstlineee()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstlineee" duration-ms="597" started-at="2020-03-05T15:17:55 IST" description="verify the textingline present" finished-at="2020-03-05T15:17:56 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796930238.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796930238.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401683350.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401683350.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyfirstlineee -->
-        <test-method status="FAIL" signature="signinbuttonclick()[pri:0, instance:testrunner.Amazongoogletestrun@44f75083]" name="signinbuttonclick" duration-ms="12389" started-at="2020-02-27T15:18:51Z" description="click the signin button" finished-at="2020-02-27T15:19:04Z">
-=======
-    <test name="Amazongoogletest" duration-ms="34879" started-at="2020-02-26T18:00:26 IST" finished-at="2020-02-26T18:01:01 IST">
-      <class name="testrunner.Amazongoogletestrun">
-        <test-method status="PASS" signature="verifyfirstline()[pri:1, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="verifyfirstline" duration-ms="581" started-at="2020-02-26T18:00:26 IST" description="verify the textingline present" finished-at="2020-02-26T18:00:27 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720235283.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720235283.png' height='100' width='100'/> </a></td>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyfirstline -->
-        <test-method status="SKIP" signature="signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" duration-ms="11893" retried="true" started-at="2020-02-26T18:00:36 IST" description="click the signin button" finished-at="2020-02-26T18:00:48 IST">
->>>>>>> newtesting
+        <test-method status="SKIP" signature="signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" duration-ms="11761" retried="true" started-at="2020-03-05T15:18:04 IST" description="click the signin button" finished-at="2020-03-05T15:18:16 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: /html/body/div[1]/header/div/div[1]/div[4]/div[3]/div[2]/div/div[1]/div/a/span
@@ -183,13 +104,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LE000539', ip: '172.25.11.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-<<<<<<< HEAD
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8356, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3bbce57b-9ba8-460f-9ff0-f0b25c5cd616
-=======
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 9868, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8c536ea7-fd7d-43c3-9c4b-ce2f85b629ee
->>>>>>> newtesting
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17540, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2401278-6184-4124-9004-aaa6767cc5e0
 *** Element info: {Using=xpath, value=/html/body/div[1]/header/div/div[1]/div[4]/div[3]/div[2]/div/div[1]/div/a/span}]]>
             </message>
             <full-stacktrace>
@@ -198,13 +114,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LE000539', ip: '172.25.11.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-<<<<<<< HEAD
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 8356, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 3bbce57b-9ba8-460f-9ff0-f0b25c5cd616
-=======
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 9868, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8c536ea7-fd7d-43c3-9c4b-ce2f85b629ee
->>>>>>> newtesting
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17540, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2401278-6184-4124-9004-aaa6767cc5e0
 *** Element info: {Using=xpath, value=/html/body/div[1]/header/div/div[1]/div[4]/div[3]/div[2]/div/div[1]/div/a/span}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -241,19 +152,9 @@ at java.lang.Thread.run(Thread.java:745)
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-<<<<<<< HEAD
-            <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796944821.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582796944821.png' height='100' width='100'/> </a></td>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- signinbuttonclick -->
-      </class> <!-- testrunner.Amazongoogletestrun -->
-    </test> <!-- Amazongoogletest -->
-    <test name="Logincredentialtest" duration-ms="117" started-at="2020-02-27T09:49:12Z" finished-at="2020-02-27T09:49:12Z">
-=======
-          </reporter-output>
-        </test-method> <!-- signinbuttonclick -->
-        <test-method status="FAIL" signature="signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" duration-ms="10017" started-at="2020-02-26T18:00:48 IST" description="click the signin button" finished-at="2020-02-26T18:00:58 IST">
+        <test-method status="FAIL" signature="signinbuttonclick()[pri:2, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="signinbuttonclick" duration-ms="10016" started-at="2020-03-05T15:18:16 IST" description="click the signin button" finished-at="2020-03-05T15:18:26 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //*[@id="nav-link-accountList"]
@@ -261,8 +162,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LE000539', ip: '172.25.11.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 9868, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8c536ea7-fd7d-43c3-9c4b-ce2f85b629ee
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17540, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2401278-6184-4124-9004-aaa6767cc5e0
 *** Element info: {Using=xpath, value=//*[@id="nav-link-accountList"]}]]>
             </message>
             <full-stacktrace>
@@ -271,8 +172,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'LE000539', ip: '172.25.11.66', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 9868, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8c536ea7-fd7d-43c3-9c4b-ce2f85b629ee
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 17540, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f2401278-6184-4124-9004-aaa6767cc5e0
 *** Element info: {Using=xpath, value=//*[@id="nav-link-accountList"]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -310,29 +211,29 @@ at java.lang.Thread.run(Thread.java:745)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720259186.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720259186.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401706948.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401706948.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- signinbuttonclick -->
-        <test-method status="PASS" signature="movetothenextpagecreateaccount()[pri:3, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="movetothenextpagecreateaccount" duration-ms="496" started-at="2020-02-26T18:00:59 IST" description="Navigate to the next page create account" finished-at="2020-02-26T18:00:59 IST">
+        <test-method status="PASS" signature="movetothenextpagecreateaccount()[pri:3, instance:testrunner.Amazongoogletestrun@4b1c1ea0]" name="movetothenextpagecreateaccount" duration-ms="560" started-at="2020-03-05T15:18:27 IST" description="Navigate to the next page create account" finished-at="2020-03-05T15:18:27 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720261389.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720261389.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401709278.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401709278.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- movetothenextpagecreateaccount -->
       </class> <!-- testrunner.Amazongoogletestrun -->
     </test> <!-- Amazongoogletest -->
-    <test name="Logincredentialtest" duration-ms="20123" started-at="2020-02-26T18:01:01 IST" finished-at="2020-02-26T18:01:21 IST">
+    <test name="Logincredentialtest" duration-ms="20284" started-at="2020-03-05T15:18:29 IST" finished-at="2020-03-05T15:18:49 IST">
       <class name="testrunner.Logincredentialtestrun">
-        <test-method status="PASS" signature="amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="amazonregtitleverify" duration-ms="136" started-at="2020-02-26T18:01:01 IST" finished-at="2020-02-26T18:01:01 IST">
+        <test-method status="PASS" signature="amazonregtitleverify()[pri:0, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="amazonregtitleverify" duration-ms="125" started-at="2020-03-05T15:18:29 IST" finished-at="2020-03-05T15:18:29 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720263003.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720263003.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401710969.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401710969.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- amazonregtitleverify -->
-        <test-method status="PASS" signature="enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="enterthename" duration-ms="320" started-at="2020-02-26T18:01:03 IST" data-provider="inputdata" finished-at="2020-02-26T18:01:03 IST">
+        <test-method status="PASS" signature="enterthename(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="enterthename" duration-ms="244" started-at="2020-03-05T15:18:31 IST" data-provider="inputdata" finished-at="2020-03-05T15:18:31 IST">
           <params>
             <param index="0">
               <value>
@@ -352,26 +253,25 @@ at java.lang.Thread.run(Thread.java:745)
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720264832.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720264832.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401712759.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401712759.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- enterthename -->
-        <test-method status="PASS" signature="dateselection()[pri:2, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="dateselection" duration-ms="14716" started-at="2020-02-26T18:01:04 IST" finished-at="2020-02-26T18:01:19 IST">
+        <test-method status="PASS" signature="dateselection()[pri:2, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="dateselection" duration-ms="14885" started-at="2020-03-05T15:18:33 IST" finished-at="2020-03-05T15:18:47 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720280628.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720280628.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401728758.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401728758.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- dateselection -->
-        <test-method status="PASS" signature="getthetitle()[pri:3, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="getthetitle" duration-ms="10" started-at="2020-02-26T18:01:20 IST" finished-at="2020-02-26T18:01:20 IST">
+        <test-method status="PASS" signature="getthetitle()[pri:3, instance:testrunner.Logincredentialtestrun@7a1ebcd8]" name="getthetitle" duration-ms="4" started-at="2020-03-05T15:18:48 IST" finished-at="2020-03-05T15:18:48 IST">
           <reporter-output>
             <line>
-              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720281616.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1582720281616.png' height='100' width='100'/> </a></td>]]>
+              <![CDATA[<td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401729725.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583401729725.png' height='100' width='100'/> </a></td>]]>
             </line>
           </reporter-output>
         </test-method> <!-- getthetitle -->
       </class> <!-- testrunner.Logincredentialtestrun -->
->>>>>>> newtesting
     </test> <!-- Logincredentialtest -->
   </suite> <!-- TestingSuite -->
 </testng-results>
