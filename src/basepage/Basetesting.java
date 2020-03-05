@@ -300,12 +300,8 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
              now.add(Calendar.DATE, 15);
               int fdates=now.get(Calendar.DATE);
               System.out.println("future datessssssssssssssssssssss   "+fdates);   System.out.println("future dates   "+fdates);
-              
-              System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh");
-              
-
-              System.out.println("hhhhhhhhhhhhhhhh");
-              System.out.println("hhhhhhhh");
+             
+             
               monthdifference=fm-thismonth;
               System.out.println("testiiiiiiiiiiiiiiiiiiiiiiiiiiiiing");
               System.out.println("month difference: " + monthdifference);
@@ -391,8 +387,8 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap entries : ");
-
+		System.out.println("LinkedHashMap entries ::::::::::::::::::::::::::::: ");
+		System.out.println("tesdting");
 		while(iteratorr.hasNext())
 		{
 		    String monthchoose=(iteratorr.next());
