@@ -303,7 +303,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
             
   
               monthdifference=fm-thismonth;
-              System.out.println("testiiiiiiiiiiiiiiiiiiiiiiiiiiiiing");
+              
               System.out.println("month difference: " + monthdifference);
               String fmstring=Integer.toString(fm);
 	    System.out.println("dated after six month : " + (now.get(Calendar.MONTH) ) + "-"
@@ -371,7 +371,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap entries");
+		System.out.println("LinkedHashMap entries req");
 
 		while(iteratorr.hasNext())
 		{
