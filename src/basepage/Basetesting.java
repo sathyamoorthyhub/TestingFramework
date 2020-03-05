@@ -240,7 +240,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
         //Integer to String Conversion
         String todayStr = Integer.toString(todayInt);
         System.out.println("Today Str: " + todayStr + "\n");
- 
+        
         return todayStr;
 	}
 	
@@ -300,11 +300,10 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
              now.add(Calendar.DATE, 15);
               int fdates=now.get(Calendar.DATE);
               System.out.println("future datessssssssssssssssssssss   "+fdates);   System.out.println("future dates   "+fdates);
-              
-              System.out.println("hhhhhhhhhhhhhhhhhhhhhhhhh");
-              
+            
+  
               monthdifference=fm-thismonth;
-              
+
               System.out.println("month difference: " + monthdifference);
               String fmstring=Integer.toString(fm);
 	    System.out.println("dated after six month : " + (now.get(Calendar.MONTH) ) + "-"
@@ -342,27 +341,30 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	    Iterator<Integer> iteratorr=it1.iterator();
 
 		
-		System.out.println("LinkedHash hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ");
 
 
 
-	    System.out.println("LinkedHash testing ");
-		
-	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
 
 
 		
-		System.out.println("LinkedHash hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh ");
 
 
-	    System.out.println("LinkedHash testing ");
+
+
 		
-	    System.out.println("LinkedHash ttttttttttttttttttttttttttttt ");
 
 
-	    System.out.println("LinkedHash testing ");
+
+
 		
+
+
+
+
+
 	
+
+
 
 
 
@@ -398,7 +400,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap entries : ");
+		System.out.println("LinkedHashMap entries");
 
 		while(iteratorr.hasNext())
 		{
@@ -916,4 +918,6 @@ public void run() {
 	
 	
 }
+
+
 }
