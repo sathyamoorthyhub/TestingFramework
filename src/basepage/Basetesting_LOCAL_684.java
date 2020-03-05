@@ -382,17 +382,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	    Iterator<String> iteratorr=it1.iterator();
 
 	
-<<<<<<< HEAD
 		System.out.println("LinkedHashMap ");
 
 	    System.out.println("LinkedHashMap entries : ");
 
 
-=======
-		System.out.println("LinkedHashMap map ");
-		System.out.println("LinkedHashMap::");
-				
->>>>>>> Testingnew
 		while(iteratorr.hasNext())
 		{
 		    String monthchoose=(iteratorr.next());
