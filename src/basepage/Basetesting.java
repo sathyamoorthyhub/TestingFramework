@@ -341,35 +341,6 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	    Iterator<Integer> iteratorr=it1.iterator();
 
 		
-
-
-
-
-
-		
-
-
-
-
-		
-
-
-
-
-		
-
-
-
-
-
-	
-
-
-
-
-
-
-
 		while(iteratorr.hasNext())
 		{
 		     numberr=(iteratorr.next());
