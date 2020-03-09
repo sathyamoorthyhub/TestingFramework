@@ -380,10 +380,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 
 	
-		System.out.println("LinkedHashMap mappppppp");
 
 
-		System.out.println("LinkedHashMap:::");		
+
+
+
 
 
 
@@ -391,6 +392,10 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 	
 
+
+
+		System.out.println("LinkedHashMap mapppppppppppppppppppppp ");
+		System.out.println("LinkedHashMap::");
 
 				
 
