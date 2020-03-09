@@ -379,7 +379,13 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 
 
+
 	
+
+
+
+
+
 
 
 
@@ -403,6 +409,8 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 
 				
 
+=======
+>>>>>>> 004db2d48e5ae5b1f6b3a8e92fcc680be963d3c2
 		while(iteratorr.hasNext())
 		{
 		    String monthchoose=(iteratorr.next());
