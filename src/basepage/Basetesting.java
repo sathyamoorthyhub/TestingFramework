@@ -370,7 +370,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap mapppppppppppp ");
+		System.out.println("LinkedHashMap mapppppppppppppppppppppp ");
 		System.out.println("LinkedHashMap::");
 				
 		while(iteratorr.hasNext())
