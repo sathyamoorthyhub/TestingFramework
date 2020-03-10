@@ -19,7 +19,7 @@ import basepage.Browser;
 public class ParallelTestB extends Basetesting {
 	
 	public static RemoteWebDriver driver;
-	public static String appURL = "https://teams.microsoft.com/";
+	public static String appURL = "https://www.google.com/";
 	
 	@BeforeClass
 	@Parameters({ "browser" })

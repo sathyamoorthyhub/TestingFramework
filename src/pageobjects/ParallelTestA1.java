@@ -25,7 +25,7 @@ import basepage.Browser;
 public class ParallelTestA1 extends Basetesting  {
 	
 	public static RemoteWebDriver driver;
-	public static String appURL = "https://teams.microsoft.com/";
+	public static String appURL = "https://www.google.com/";
 	
 	@BeforeClass
 	@Parameters({ "browser" })
@@ -38,7 +38,7 @@ public class ParallelTestA1 extends Basetesting  {
 	@Test
 	public void testGooglePageTitleInFirefox() throws InterruptedException, AWTException {
 		driver.navigate().to(appURL);
-		driver.findElement(By.xpath("//*[@id=\"i0116\"]")).sendKeys("Jebas.Ebenezer@tryviumbotdev.onmicrosoft.com");
+		/*driver.findElement(By.xpath("//*[@id=\"i0116\"]")).sendKeys("Jebas.Ebenezer@tryviumbotdev.onmicrosoft.com");
 		driver.findElement(By.xpath("//*[@id=\"idSIButton9\"]")).click();
 		driver.findElement(By.xpath("//*[@id=\"i0118\"]")).sendKeys("Kom54610");
 		// Create object of Robot class
@@ -92,6 +92,7 @@ public class ParallelTestA1 extends Basetesting  {
 //			System.out.println("Closing browser");
 //			driver.quit();
 //		}
-//	}
+//	}*/
 	
+}
 }
