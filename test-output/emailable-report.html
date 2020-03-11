@@ -8,65 +8,70 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Main Test Suite</th></tr>
-<tr><td><a href="#t0">Grid firefox Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">14,936</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Grid ie Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">129,238</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">144,174</th><th colspan="2"></th></tr>
+<tr><th colspan="7">TestingSuite</th></tr>
+<tr><td><a href="#t0">Logintest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,796</td><td>Functional testing</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Amazongoogletest</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">56,541</td><td>Functional testing</td><td></td></tr>
+<tr><td><a href="#t2">Logincredentialtest</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,064</td><td>Functional testing</td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num attn">2</th><th class="num attn">2</th><th class="num">131,401</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Main Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Grid firefox Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">pageobjects.ParallelTestA1</td><td><a href="#m0">testGooglePageTitleInFirefox</a></td><td rowspan="1">1583834318531</td><td rowspan="1">3465</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Grid ie Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">pageobjects.ParallelTestB</td><td><a href="#m1">testGooglePageTitleInChrome</a></td><td rowspan="1">1583834310553</td><td rowspan="1">125751</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TestingSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testrunner.Logintestrun</td><td><a href="#m0">Testing</a></td><td rowspan="1">1583902700881</td><td rowspan="1">21866</td></tr><tr class="passedeven"><td><a href="#m1">naviagate</a></td><td rowspan="1">1583902738716</td><td rowspan="1">6151</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Amazongoogletest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testrunner.Amazongoogletestrun</td><td><a href="#m2">signinbuttonclick</a></td><td rowspan="1">1583902798428</td><td rowspan="1">10014</td></tr><tr class="failedeven"><td><a href="#m3">verifyfirstlineee</a></td><td rowspan="1">1583902765663</td><td rowspan="1">10071</td></tr><tr><th colspan="4">Amazongoogletest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">testrunner.Amazongoogletestrun</td><td><a href="#m4">signinbuttonclick</a></td><td rowspan="1">1583902786664</td><td rowspan="1">11761</td></tr><tr class="retriedeven"><td><a href="#m5">verifyfirstlineee</a></td><td rowspan="1">1583902755558</td><td rowspan="1">10097</td></tr><tr><th colspan="4">Amazongoogletest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testrunner.Amazongoogletestrun</td><td><a href="#m6">movetothenextpagecreateaccount</a></td><td rowspan="1">1583902809266</td><td rowspan="1">833</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Logincredentialtest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testrunner.Logincredentialtestrun</td><td><a href="#m7">amazonregtitleverify</a></td><td rowspan="1">1583902812195</td><td rowspan="1">134</td></tr><tr class="passedeven"><td><a href="#m8">dateselection</a></td><td rowspan="1">1583902815967</td><td rowspan="1">14112</td></tr><tr class="passedeven"><td><a href="#m9">enterthename</a></td><td rowspan="1">1583902814039</td><td rowspan="1">291</td></tr><tr class="passedeven"><td><a href="#m10">getthetitle</a></td><td rowspan="1">1583902831204</td><td rowspan="1">4</td></tr></tbody>
 </table>
-<h2>Grid firefox Test</h2><h3 id="m0">pageobjects.ParallelTestA1#testGooglePageTitleInFirefox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Grid ie Test</h2><h3 id="m1">pageobjects.ParallelTestB#testGooglePageTitleInChrome</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+<h2>Logintest</h2><h3 id="m0">testrunner.Logintestrun#Testing</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902735183.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902735183.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testrunner.Logintestrun#naviagate</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>apple</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902753007.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902753007.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Amazongoogletest</h2><h3 id="m2">testrunner.Amazongoogletestrun#signinbuttonclick</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902809112.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902809112.png' height='100' width='100'/> </a></td></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&quot;nav-link-accountList&quot;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;LE000539&apos;, ip: &apos;172.25.11.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:30625/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 420dd486-1491-4010-af5c-cf6...}
-Session ID: 420dd486-1491-4010-af5c-cf63cba2e4aa
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
-	at pageobjects.ParallelTestB.testGooglePageTitleInChrome(ParallelTestB.java:34)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12572, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a5c5b9b-e81e-4bd1-849f-7d249482b7e5
+*** Element info: {Using=xpath, value=//*[@id=&quot;nav-link-accountList&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.Amazonanotherpage.signin_button_click(Amazonanotherpage.java:37)
+	at testrunner.Amazongoogletestrun.signinbuttonclick(Amazongoogletestrun.java:37)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4444
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testrunner.Amazongoogletestrun#verifyfirstlineee</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902784860.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902784860.png' height='100' width='100'/> </a></td></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: /html/body/div[1]/div[4]/div/div[1]/div/div[2]/div[1]/div[1]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;LE000539&apos;, ip: &apos;172.25.11.66&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 12572, moz:profile: C:\Users\sathyamoorthy.p\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7a5c5b9b-e81e-4bd1-849f-7d249482b7e5
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[4]/div/div[1]/div/div[2]/div[1]/div[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	... 26 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	... 46 more
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageobjects.Amazonanotherpage.verify_first_texting(Amazonanotherpage.java:30)
+	at testrunner.Amazongoogletestrun.verifyfirstlineee(Amazongoogletestrun.java:27)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testrunner.Amazongoogletestrun#movetothenextpagecreateaccount</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902811865.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902811865.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Logincredentialtest</h2><h3 id="m5">testrunner.Logincredentialtestrun#amazonregtitleverify</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902813775.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902813775.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testrunner.Logincredentialtestrun#dateselection</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902831127.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902831127.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testrunner.Logincredentialtestrun#enterthename</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>sathyamoorthy</td><td>9894571625</td><td>sathya1983.moorthy@gmail.com</td></tr><tr><th colspan="3">Messages</th></tr><tr><td colspan="3"><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902815814.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902815814.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testrunner.Logincredentialtestrun#getthetitle</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><td><a href='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902832126.png'> <img src='C:\Users\sathyamoorthy.p\Eclipse Helios\SAIFramework/PASSEDScreenCapturesPNG/1583902832126.png' height='100' width='100'/> </a></td></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

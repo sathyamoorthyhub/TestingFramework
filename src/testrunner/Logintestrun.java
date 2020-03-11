@@ -42,6 +42,7 @@ System.out.println("Testing. Thread id is: " + id);
 @Test(priority=2,description="Navigate to next page",groups= {"Smoke testing","Functional testing","Regression testing"},dataProvider="Fruitnames")
 public  void naviagate(String text) throws InterruptedException
 {
+	
 	lp.entertext(text);
 	
 	lp.pressenter();

@@ -54,7 +54,9 @@ import Datadriven.Datareading;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
-
+import com.relevantcodes.extentreports.ExtentReports;
+ 
+import com.relevantcodes.extentreports.LogStatus;
 public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestListener, Runnable 
 
 {
@@ -62,16 +64,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 	   
 	     
 	 private int counter = 0; public static  String url=null;  static Properties props=null; public static String Browsertype=null; public static String resultname=null; public static int rowcounter=2; public static String today=null;public static DesiredCapabilities cap;
-	 private int retryMaxLimit = 1; private static int number; private static int number1; public static ExtentReports report=null; public static ExtentTest test=null;public static RemoteWebDriver driver1;public static String appURL = "http://www.google.com";
+	 private int retryMaxLimit = 1; private static int number; private static int number1; public static ExtentReports report=null; public static ExtentTest testing=null;public static RemoteWebDriver driver1;public static String appURL = "http://www.google.com";
 		
 	 public static  int monthdifference=0; public static int fdates; public static int numberr;public static int expectedmonth=0; public static int countforbutton=0;  public static int numericvalue=0;
 	 
-	 @BeforeTest
-	 public static void startTest()
-	 {
-	 report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
-	 test = report.startTest("ExtentDemo");
-	 }
+	
 	
 		 
 	public static WebDriver  browserinitialise( ) throws InterruptedException, IOException
@@ -193,11 +190,11 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
         	System.out.println("scrolling:");
         	if(number==1)
         	{
-        	//String path1=System.getProperty("user.dir")+"\\test-output\\Passedscreen\\" +System.currentTimeMillis()+".jpg"; 
-        	String path1=System.getProperty("user.dir")+"/PASSEDScreenCapturesPNG/"+System.currentTimeMillis()+".png";
+        	String path1=System.getProperty("http://172.25.11.66:8080/jenkins/job/Testing/ws/PASSEDScreenCapturesPNG/") +System.currentTimeMillis()+".jpg"; 
+        	//String path1=System.getProperty("user.dir")+"/PASSEDScreenCapturesPNG/"+System.currentTimeMillis()+".png";
         	Reporter.setEscapeHtml(false);System.setProperty("org.uncommons.reportng.escape-output", "false");
         	ImageIO.write(screenshot1.getImage(),"png",new File(path1));  
-            Reporter.log("<td><a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a></td>");
+            Reporter.log("<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>");
            	}
         	else if(number1==2 )
         	{
@@ -370,7 +367,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap ");
+		System.out.println("LinkedHashMappppppppppppppppppppppppppppp");
 		
 				
 		while(iteratorr.hasNext())
@@ -882,6 +879,7 @@ public static void safeJavaScriptClick(WebElement element) throws Exception {
 		System.out.println("Unable to click on element "+ e.getStackTrace());
 	}
 }
+
 
 
 @Override
