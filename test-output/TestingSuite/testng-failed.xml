@@ -14,7 +14,6 @@
       <class name="testrunner.Amazongoogletestrun">
         <methods>
           <include name="signinbuttonclick"/>
-          <include name="verifyfirstlineee"/>
         </methods>
       </class> <!-- testrunner.Amazongoogletestrun -->
     </classes>

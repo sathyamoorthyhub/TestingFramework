@@ -190,11 +190,13 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
         	System.out.println("scrolling:");
         	if(number==1)
         	{
-        	String path1=System.getProperty("http://172.25.11.66:8080\\jenkins\\job\\Testing\\ws\\PASSEDScreenCapturesPNG\\") +System.currentTimeMillis()+".jpg"; 
-        	//String path1=System.getProperty("user.dir")+"\\PASSEDScreenCapturesPNG\\"+System.currentTimeMillis()+".png";
+        	//String path1=System.getProperty("http://172.25.11.66:8080\\jenkins\\job\\Testing\\ws\\PASSEDScreenCapturesPNG\\") +System.currentTimeMillis()+".jpg"; 
+        	String path1=System.getProperty("user.dir")+"\\PASSEDScreenCapturesPNG\\"+System.currentTimeMillis()+".png";
         	Reporter.setEscapeHtml(false);System.setProperty("org.uncommons.reportng.escape-output", "false");
-        	ImageIO.write(screenshot1.getImage(),"png",new File(path1));  
-        	Reporter.log("<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>");
+        	ImageIO.write(screenshot1.getImage(),"png",new File(path1)); 
+        	String html="<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>";
+        	Reporter.log(html.toString());
+        	//Reporter.log("<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>");
            	}
         	else if(number1==2 )
         	{
@@ -367,7 +369,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMapppppppppppppppp");
+		System.out.println("LinkedHashMap");
 		
 				
 		while(iteratorr.hasNext())
