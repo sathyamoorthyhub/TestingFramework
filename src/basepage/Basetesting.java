@@ -69,9 +69,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		
 	 public static  int monthdifference=0; public static int fdates; public static int numberr;public static int expectedmonth=0; public static int countforbutton=0;  public static int numericvalue=0;
 	 
-	
-	
-		 
+			 
 	public static WebDriver  browserinitialise( ) throws InterruptedException, IOException
 	{
 	    // Creates an empty property list
@@ -374,7 +372,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMap");
+		System.out.println("LinkedHashMappppppppppppppppppppppppp");
 		
 				
 		while(iteratorr.hasNext())
