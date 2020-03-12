@@ -7,7 +7,6 @@
       <class name="pageobjects.ParallelTestB">
         <methods>
           <include name="testGooglePageTitleInChrome"/>
-          <include name="startTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- pageobjects.ParallelTestB -->
