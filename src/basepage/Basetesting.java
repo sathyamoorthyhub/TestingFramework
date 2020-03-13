@@ -142,7 +142,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
  number= result.getStatus(); String resultname = result.getName();
  fullsscreen();
 	
- System.out.println("Success of test cases and its details are");  
+ System.out.println("Successsssssssssssssssss of test cases and its details are");  
  }  
    
  @Override  
