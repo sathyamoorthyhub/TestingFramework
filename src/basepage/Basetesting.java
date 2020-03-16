@@ -374,7 +374,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMapppppppppppppppppppppppppp");
+		System.out.println("LinkedHashMap");
 		
 				
 		while(iteratorr.hasNext())
@@ -386,8 +386,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 				numericvalue=lh1.get(monthchoose);
 				break;
 			}
-			
-						  	    
+									  	    
 		  }
 		return numericvalue;
 	
