@@ -23,7 +23,7 @@ public class HubNodeTest extends Basetesting {
 	
 	//java -Dwebdriver.ie.driver=C:\ie\IEDriverServer.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://172.25.11.66:4444/grid/register -port 5432
 
-	//java -Dwebdriver.gecko.driver=C:\gecko\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://172.25.11.66:4444/grid/register -port 5432
+	//java -Dwebdriver.gecko.driver=C:\gecko\geckodriver.exe -jar selenium-server-standalone-3.141.59.jar -role node -hub http://172.25.11.66:4444/grid/register -port 5433
 
 		@BeforeTest
 

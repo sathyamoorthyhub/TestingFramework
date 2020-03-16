@@ -21,6 +21,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.imageio.ImageIO;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -142,7 +143,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
  number= result.getStatus(); String resultname = result.getName();
  fullsscreen();
 	
- System.out.println("Successsssssssssssssssss of test cases and its details are");  
+ System.out.println("Success of test cases and its details are");  
  }  
    
  @Override  
@@ -184,7 +185,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		
 		Screenshot screenshot1=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(500)).takeScreenshot(driver);
 		System.out.println("scrollllllllllllllllllllll:");
-		
+				
         try {
         	System.out.println("scrolling:");
         	if(number==1)
@@ -193,6 +194,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
         	String path1=System.getProperty("user.dir")+"\\PASSEDScreenCapturesPNG\\"+System.currentTimeMillis()+".png";
         	Reporter.setEscapeHtml(false);System.setProperty("org.uncommons.reportng.escape-output", "false");
         	ImageIO.write(screenshot1.getImage(),"png",new File(path1)); 
+        
         	//ImageIO.write(screenshot1.getImage(),"png",new File(path1.toString()));
         	//String html="<a href='"+ path1+ "'> <img src='"+ path1 + "' height='100' width='100'/> </a>";
         	//Reporter.log(html.toString());
@@ -372,7 +374,7 @@ public class Basetesting implements IRetryAnalyzer,IAnnotationTransformer,ITestL
 		Set<String> it1=lh1.keySet();
 	    Iterator<String> iteratorr=it1.iterator();
 	
-		System.out.println("LinkedHashMapppppppppppppppppp");
+		System.out.println("LinkedHashM");
 		
 				
 		while(iteratorr.hasNext())
